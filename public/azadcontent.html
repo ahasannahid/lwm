@@ -370,9 +370,9 @@
             Digital Content (Video)
           </h2>
 
-          <div class="flex  mb-8 mx-4">
+          <div class="md:flex  mb-8 mx-4">
             <!-- First column (Larger) -->
-            <div class="flex-grow">
+            <div class="md:flex-grow">
               <div class="bg-white rounded-lg shadow-md dark:bg-gray-800 p-4">
                 <div class="relative" style="padding-top: 56.25%;">
                   <video controls class="absolute top-0 left-0 w-full h-full">
@@ -409,8 +409,8 @@
             </div>
 
             <!-- Second column (Smaller) -->
-            <div class="flex-grow-0 px-2 ">
-              <div class="bg-white rounded-lg shadow-md dark:bg-gray-800 pb-20  px-5 pr-8 text-gray-100">
+            <div class="md:flex-grow-0 px-2 ">
+              <div class="bg-white rounded-lg shadow-md dark:bg-gray-800 md:pb-20  px-5 pr-8 text-gray-100">
                 <ul>
                   <div x-data="{ open: false }">
                     <button @click="open = !open" style="outline: none;"
@@ -506,15 +506,15 @@
             </div>
           </div>
 
-          <div class="flex justify-around ml-5">
+          <!-- <div class="flex justify-around ml-5">
             <h1 class="text-3xl mb-3 dark:text-white">নিচের প্রশ্নগুলোর উত্তর দাও-</h1>
             <h1 class="text-center text-3xl dark:text-white">লিডারবোর্ড</h1>
-          </div>
+          </div> -->
 
-          <div class="flex justify-between ml-5">
+          <div class="md:flex justify-between ml-5">
 
-            <div class="border-2 pb-4 pt-1 px-4 mb-5  rounded flex-auto w-64">
-
+            <div class=" pb-4 pt-1 px-4 mb-5  md:flex-auto md:w-64">
+              <h1 class="text-3xl mb-3 dark:text-white">নিচের প্রশ্নগুলোর উত্তর দাও-</h1>
               <div class="flex items-center justify-center py-2 md:py-8 flex-wrap gap-6">
                 <button type="button"
                   class="text-blue-700 hover:text-white border border-black-600 bg-white hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-purple-300 rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3 dark:border-purple-500 dark:text-purple-500 dark:hover:text-white dark:hover:bg-purple-500 dark:bg-gray-900 dark:focus:ring-purple-800 p-1">শহীদ আজাদ এর পারিবারিক অবস্থা</button>
@@ -578,7 +578,8 @@
               </form>
             </div>
 
-            <div class="ms-5 flex-auto w-32 dark:text-white">
+            <div class="ms-5 md:flex-auto md:w-32 dark:text-white">
+              <h1 class="text-center text-3xl dark:text-white">লিডারবোর্ড</h1>
               <div class="px-6">
 
                 <div class="w-full overflow-hidden rounded-lg shadow-xs">
