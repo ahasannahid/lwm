@@ -477,13 +477,41 @@
                 <button class="border-2 px-1 py-2 rounded-lg">স্বামীসহ রেডিও পাকিস্তানে</button>
                 <button class="border-2 px-1 py-2 rounded-lg">বিয়ের সাজে</button>
               </div>
-             
+
 
 
               <form class="border-2">
                 <div class="mb-4 dark:text-white mt-2 p-3">
                   <!-- <img src="./assets/img/image10.jpg" alt="" class="mx-auto rounded-lg h-auto w-40"> -->
-                  <label class="block text-sm font-semibold mt-3 mb-2">প্রশ্ন ১: রুমীরা যারা একসাথে যুদ্ধ করতো  তাদের কে কি বলা হতো ?</label>
+                  <div class="flex justify-around">
+                    <label class="text-sm font-semibold mt-3 mb-2 w-4/5 ">প্রশ্ন ১: রুমীরা যারা একসাথে যুদ্ধ করতো তাদের
+                      কে কি বলা হতো ?</label>
+                    <img onclick="openPopup()" src="./assets/img/image10.jpg" alt="" class="w-1/5 mt-5 rounded-lg ">
+                  </div>
+                  <div class="grid grid-cols-2 gap-4">
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="question1" value="a" class="form-radio">
+                      <span class="ml-2">A. ক্রিকপ্লাটুন</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="question1" value="b" class="form-radio">
+                      <span class="ml-2">B. ক্রাকপ্লাটুন</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="question1" value="c" class="form-radio">
+                      <span class="ml-2">C. কাদেরীয়া বাহিনী</span>
+                    </label>
+                    <label class="flex items-center space-x-2">
+                      <input type="radio" name="question1" value="d" class="form-radio">
+                      <span class="ml-2">D. জেড ফোর্স</span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="mb-4 dark:text-white mt-2 p-3">
+                  <!-- <img src="./assets/img/image10.jpg" alt="" class="mx-auto rounded-lg h-auto w-40"> -->
+                  <label class="block text-sm font-semibold mt-3 mb-2">প্রশ্ন ১: রুমীরা যারা একসাথে যুদ্ধ করতো তাদের কে
+                    কি বলা হতো ?</label>
                   <div class="grid grid-cols-2 gap-4">
                     <label class="flex items-center space-x-2">
                       <input type="radio" name="question1" value="a" class="form-radio">
@@ -526,7 +554,8 @@
                   </div>
                 </div>
                 <div class="mb-4 dark:text-white mt-2 p-3">
-                  <label class="block text-sm font-semibold mb-2">প্রশ্ন ৩: জাহানারা ইমাম এর বড় ছেলে রুমী কোথায় ট্রেনিং নিয়েছিলেন ? </label>
+                  <label class="block text-sm font-semibold mb-2">প্রশ্ন ৩: জাহানারা ইমাম এর বড় ছেলে রুমী কোথায় ট্রেনিং
+                    নিয়েছিলেন ? </label>
                   <div class="grid grid-cols-2 gap-4">
                     <label class="flex items-center space-x-2">
                       <input type="radio" name="question2" value="a" class="form-radio">
@@ -547,7 +576,8 @@
                   </div>
                 </div>
                 <div class="mb-4 dark:text-white mt-2 p-3">
-                  <label class="block text-sm font-semibold mb-2">প্রশ্ন ৪: স্বাধীনতা লাভের পর জাহানারা ইমাম কাদের বিচার চেয়ে আন্দোলন করেছিলেন ? </label>
+                  <label class="block text-sm font-semibold mb-2">প্রশ্ন ৪: স্বাধীনতা লাভের পর জাহানারা ইমাম কাদের বিচার
+                    চেয়ে আন্দোলন করেছিলেন ? </label>
                   <div class="grid grid-cols-2 gap-4">
                     <label class="flex items-center space-x-2">
                       <input type="radio" name="question2" value="a" class="form-radio">
@@ -1136,6 +1166,24 @@
       </main>
     </div>
   </div>
+  <script>
+    function openPopup() {
+      // Specify the URL of the content you want to display in the popup
+      var popupUrl = './assets/img/image10.jpg';
+
+      // Set the dimensions of the popup window
+      var width = 600;
+      var height = 400;
+
+      // Calculate the position of the popup window to center it on the screen
+      var left = (window.innerWidth - width) / 2;
+      var top = (window.innerHeight - height) / 2;
+
+      // Open the popup window
+      window.open(popupUrl, '_blank', 'width=' + width + ', height=' + height + ', left=' + left + ', top=' + top);
+    }
+  </script>
+
   <script defer src="./assets/js/script.js"></script>
 
 </body>
